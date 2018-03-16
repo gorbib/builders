@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		
+		<title>{{ page.title }}</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="{{ page.description }}">
+		
+		<link rel="stylesheet" href="/assets/css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ilyabirman-likely/2.3.0/likely.css">
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>…и возникают города</h1>
+						<p>Коллекция воспоминаний первостроителей Качканара</p>
+						<ul class="actions">
+							<li><a href="#nav" class="button icon solo fa-arrow-down scrolly">Продолжить</a></li>
+						</ul>
+					</div>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li {% if page.url == '/' %}class="active"{% endif %}><a href="/">О проекте</a></li>
+							<li {% if page.url == '/persons.html' %}class="active"{% endif %}><a href="/persons">Первостроители</a></li>
+							<!-- <li><a href="#">Фотоархив</a></li> -->
+						</ul>
+						<div style="margin-top:10px">
+							<div class="likely likely-light likely-big">
+								<div class="twitter"></div>
+								<div class="facebook"></div>
+								<div class="vkontakte"></div>
+								<div class="odnoklassniki"></div>
+							</div>
+						</div>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						{{ content }}
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; <a href="http://gorbib.org.ru">Качканарская библиотека им. Ф. Т. Селянина</a>, {{ site.time | date: '%Y' }} г.</li><li>Авторы: Мелехина Е.В. и Марамыгина Е.В.</li><li><a href="https://polyskalov.com">polyskalov</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/ilyabirman-likely/2.3.0/likely.js"></script>
+	</body>
+</html>

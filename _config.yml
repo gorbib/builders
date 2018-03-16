@@ -1,0 +1,17 @@
+baseurl: "" # the subpath of your site, e.g. /blog
+# url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+kramdown:
+  auto_ids: false # Disable automatic ids for headers (h1,h2,..)
+
+plugins:
+  - jekyll-feed
+  # - jekyll-sitemap
+
+collections:
+  persons:
+    layout: person
+    permalink: /:collection/:title
+    output: true

@@ -1,0 +1,27 @@
+---
+layout: default
+title: Первостроители Качканара | Коллекция воспоминаний
+---
+
+<article class="post featured">
+    <header class="major">
+        <h2>Первостроители</h2>
+    </header>
+</article>
+
+<section class="posts">
+    {% assign persons = site.persons | reverse %}
+
+    {% for person in persons %}
+        <article>
+            <header>
+                <h2><a href="{{ person.url }}">{{ person.name }}</a></h2>
+            </header>
+            <a href="{{ person.url }}" class="image fit"><img src="{{ person.photo }}" alt="{{ person.name }}"></a>
+            <p>{{ person.description }}</p>
+            <ul class="actions">
+                <li><a href="{{ person.url }}" class="button">Читать</a></li>
+            </ul>
+        </article>
+    {% endfor %}
+</section>
