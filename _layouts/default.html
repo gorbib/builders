@@ -3,12 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		
-		<title>{{ page.title }}</title>
+		<title>{{ page.title | default: site.title}}</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<meta name="description" content="{{ page.description }}">
+
+		<link rel="alternate" type="application/rss+xml" title="{{ site.title }} — лента" href="{{ site.url }}/feed.xml">
 		
-		<link rel="stylesheet" href="/assets/css/main.css">
+		<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ilyabirman-likely/2.3.0/likely.css">
 	</head>
 	<body class="is-loading">
@@ -18,8 +20,8 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>…и возникают города</h1>
-						<p>Коллекция воспоминаний первостроителей Качканара</p>
+						<h1>{{ site.tagline }}</h1>
+						<p>{{ site.title }}</p>
 						<ul class="actions">
 							<li><a href="#nav" class="button icon solo fa-arrow-down scrolly">Продолжить</a></li>
 						</ul>
