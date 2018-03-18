@@ -8,6 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 markdown: kramdown
 kramdown:
   auto_ids: false # Disable automatic ids for headers (h1,h2,..)
+  hard_wrap: true
 
 plugins:
   - jekyll-feed
