@@ -35,6 +35,7 @@
 			<div id="wrapper" class="fade-in">
 
 				<!-- Intro -->
+				{% if page.intro %}
 					<div id="intro">
 						<h1>{{ site.tagline }}</h1>
 						<p>{{ site.title }}</p>
@@ -42,6 +43,7 @@
 							<li><a href="#nav" class="button icon solo fa-arrow-down scrolly">Продолжить</a></li>
 						</ul>
 					</div>
+				{% endif %}
 
 				<!-- Nav -->
 					<nav id="nav">
