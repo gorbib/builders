@@ -46,8 +46,12 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li {% if page.url == '/' %}class="active"{% endif %}><a href="/">О проекте</a></li>
-							<li {% if page.url == '/persons.html' %}class="active"{% endif %}><a href="/persons">Первостроители</a></li>
+							{% assign current = 'class="active"' %}
+
+							<li {% if page.url == '/' %}{{current}}{% endif %}><a href="/">О проекте</a></li>
+							<li {% if page.url == '/persons.html' or page.layout == 'person' %}{{current}}{% endif %}>
+								<a href="/persons">Первостроители</a>
+							</li>
 							<!-- <li><a href="#">Фотоархив</a></li> -->
 						</ul>
 						<div style="margin-top:10px">
