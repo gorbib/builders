@@ -43,3 +43,5 @@ fields:
   default: ''
   description: "Отображается под фотографией в списке людей и над фотографией на странице
     о человеке"
+pages:
+- _persons/guniceva.md
