@@ -3,7 +3,7 @@ title: "Соколова"
 layout: person
 date: 2017-06-27 00:00:36 +0500
 name: "Соколова Людмила Викторовна"
-photo: ''
+photo: "/images/persons/2018/06/21/_DSC3305.JPG"
 description: 1938 г.р., пенсионерка. Профессия — штукатур-маляр
 published: false
 ---
