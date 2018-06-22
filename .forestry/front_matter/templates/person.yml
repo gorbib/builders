@@ -45,5 +45,6 @@ fields:
     о человеке"
 pages:
 - _persons/.md
+- _persons/.md
 - _persons/sokolova.md
 - _persons/guniceva.md
