@@ -1,4 +1,5 @@
 ---
+label: person
 hide_body: false
 is_partial: false
 fields:
@@ -10,41 +11,39 @@ fields:
   config:
     required: true
 - name: name
-  label: "Имя"
+  label: Имя
   type: text
   hidden: false
   default: ''
-  description: "Фамилия имя и отчество человека"
+  description: Фамилия имя и отчество человека
   config:
     required: true
 - name: title
-  label: "Заголовок"
+  label: Заголовок
   type: text
   hidden: false
   default: ''
-  description: "Для отображения в браузере и в поисковых системах"
+  description: Для отображения в браузере и в поисковых системах
 - name: date
-  label: "Дата записи"
+  label: Дата записи
   type: datetime
   hidden: false
   default: ''
   config:
     date_format: DD.MM.YYYY
 - name: photo
-  label: "Фотография"
+  label: Фотография
   type: file
   hidden: false
   default: ''
-  description: "Большая фотография человека в альбомной ориентации"
+  description: Большая фотография человека в альбомной ориентации
 - name: description
-  label: "Кратко о человеке"
+  label: Кратко о человеке
   type: textarea
   hidden: false
   default: ''
-  description: "Отображается под фотографией в списке людей и над фотографией на странице
-    о человеке"
+  description: Отображается под фотографией в списке людей и над фотографией на странице
+    о человеке
 pages:
-- _persons/.md
-- _persons/.md
 - _persons/sokolova.md
 - _persons/guniceva.md
