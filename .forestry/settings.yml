@@ -6,9 +6,6 @@ webhook_url:
 sections:
 - type: heading
   label: Разделы сайта
-- type: jekyll-pages
-  label: Страницы
-  create: all
 - type: directory
   path: _persons
   label: Люди
