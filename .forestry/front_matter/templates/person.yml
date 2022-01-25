@@ -44,5 +44,5 @@ fields:
   description: Отображается под фотографией в списке людей и над фотографией на странице
     о человеке
 pages:
-- _persons/sokolova.md
 - _persons/guniceva.md
+- _persons/sokolova.md
