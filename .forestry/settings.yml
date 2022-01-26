@@ -19,7 +19,7 @@ sections:
   create: all
   match: "**/*"
   templates:
-  - person
+  - test
 upload_dir: images/persons
 public_path: "/images/persons"
 front_matter_path: "/uploads"
