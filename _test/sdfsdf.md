@@ -5,7 +5,6 @@ title: sdfsdf
 date: 
 photo: ''
 description: sdf
-published: false
 
 ---
 sdfsdfsdf
