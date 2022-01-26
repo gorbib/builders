@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: "@"
 webhook_url: 
 sections:
-- type: directory
-  path: _test
-  label: test
-  create: all
-  match: "**/*"
 - type: heading
   label: Разделы сайта
 - type: directory
@@ -18,6 +13,11 @@ sections:
   match: "**/*"
   templates:
   - 27bf13c1-72a1-4238-aec9-8f256e6e156e
+- type: directory
+  path: _test
+  label: test
+  create: all
+  match: "**/*"
 upload_dir: images/persons
 public_path: "/images/persons"
 front_matter_path: "/uploads"
