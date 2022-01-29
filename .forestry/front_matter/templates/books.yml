@@ -7,3 +7,18 @@ fields:
   config:
     required: false
   label: Название книги
+- name: fotografiya
+  type: text
+  config:
+    required: false
+  label: Фотография
+- name: opisanie_knigi
+  type: text
+  config:
+    required: false
+  label: Описание книги
+- name: data_zapisi
+  type: text
+  config:
+    required: false
+  label: Дата записи
