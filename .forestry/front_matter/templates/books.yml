@@ -1,4 +1,9 @@
 ---
 label: books
 hide_body: true
-fields: []
+fields:
+- name: books
+  type: text
+  config:
+    required: false
+  label: books
