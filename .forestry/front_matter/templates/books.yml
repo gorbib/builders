@@ -2,8 +2,8 @@
 label: books
 hide_body: true
 fields:
-- name: books
+- name: nazvanie_knigi
   type: text
   config:
     required: false
-  label: books
+  label: Название книги
