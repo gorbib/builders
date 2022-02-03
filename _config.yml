@@ -17,7 +17,6 @@ collections:
   persons:
     layout: person
     permalink: /:collection/:title
-    output: true 
     output: true
 collections:
   books:
