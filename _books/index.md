@@ -1,4 +1,5 @@
 ---
+layout: book
 nazvanie_knigi: "111"
 fotografiya: ''
 opisanie_knigi: "111"
