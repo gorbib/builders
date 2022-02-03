@@ -23,4 +23,4 @@ fields:
     required: false
   label: Дата записи
 pages:
-- _books/книга.md
+- _books/index.md
