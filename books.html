@@ -1,0 +1,22 @@
+---
+layout: default
+title: Книги о первостроителях Качканара | Коллекция воспоминаний
+description: "Коллекция книг, посвящённых первостроителям города Качканар Это они первыми пришли в тайгу и начали расчищать от леса площадку под новый город"
+---
+
+<article class="post featured">
+    <header class="major">
+        <h2>Книги о Качканаре</h2>
+    </header>
+</article>
+
+<section>
+    {% assign books = site.books %}
+
+    {% for book in books %}
+        <article>
+            <h2><a href="{{ book.url }}">{{ book.nazvanie_knigi }}</a></h2>
+            <p>{{ book.opisanie_knigi }}</p>
+        </article>
+    {% endfor %}
+</section>
