@@ -1,8 +1,8 @@
 ---
 layout: book
-nazvanie_knigi: "111"
+nazvanie_knigi: "Название книги"
 fotografiya: ''
-opisanie_knigi: "111"
+opisanie_knigi: "Описание книги"
 data_zapisi: 01.01.2022
 
 ---
