@@ -7,11 +7,11 @@ fields:
   config:
     required: false
   label: Название книги
-- name: fotografiya
-  type: text
+- name: foto
+  type: file
   config:
-    required: false
-  label: Фотография
+    maxSize: 64
+  label: Фото
 - name: opisanie_knigi
   type: text
   config:
@@ -22,5 +22,3 @@ fields:
   config:
     required: false
   label: Дата записи
-pages:
-- _books/index.md
