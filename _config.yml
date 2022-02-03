@@ -18,8 +18,4 @@ collections:
     layout: person
     permalink: /:collection/:title
     output: true
-collections:
-  books:
-    layout: book
-    permalink: /:collection/:title
-    output: true
+
