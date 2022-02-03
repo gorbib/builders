@@ -1,46 +1,38 @@
 <!doctype html>
 <html lang="ru">
 	<head>
-		<meta charset="utf-8">
-		
+		<meta charset="utf-8">		
+
 		<title>{{ page.title | default: site.title}}</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<meta name="description" content="{{ page.description }}">
-
 		<meta property="og:locale" content="ru_RU">
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="{{ page.title }}">
 		<meta property="og:description" content="{{ page.description }}">
 		<meta property="og:site_name" content="{{ site.title }}">
 		<meta property="og:image" content="{{ site.url }}{{ page.photo | default: "/images/bg_original.jpg" }}">
-
 		<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml">
-
 		<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ilyabirman-likely/2.3.0/likely.css">
-
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
-
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42200665-7"></script>
 		<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-
 		gtag('config', 'UA-42200665-7');
 		</script>
 	</head>
 	<body class="is-loading">
-
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
-
 				<!-- Intro -->
 				{% if page.intro %}
 					<div id="intro">
@@ -51,12 +43,10 @@
 						</ul>
 					</div>
 				{% endif %}
-
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
 							{% assign current = 'class="active"' %}
-
 							<li {% if page.url == '/' %}{{current}}{% endif %}><a href="/">О проекте</a></li>
 							<li {% if page.url == '/persons.html' or page.layout == 'person' %}{{current}}{% endif %}>
 								<a href="/persons">Первостроители</a>
@@ -67,34 +57,8 @@
 							<!-- <li><a href="#">Фотоархив</a></li> -->
 						</ul>
 						<div style="margin-top:10px">
-							<div class="likely likely-light likely-big">
-								<div class="twitter"></div>
-								<div class="facebook"></div>
-								<div class="vkontakte"></div>
-								<div class="odnoklassniki"></div>
-							</div>
-						</div>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-						{{ content }}
-					</div>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; <a href="http://gorbib.org.ru">Качканарская библиотека им. Ф. Т. Селянина</a>, {{ site.time | date: '%Y' }} г.</li><li>Авторы: Мелехина Е.В. и Марамыгина Е.В.</li><li><a href="https://polyskalov.com">polyskalov</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="/assets/js/jquery.min.js"></script>
-			<script src="/assets/js/jquery.scrollex.min.js"></script>
-			<script src="/assets/js/jquery.scrolly.min.js"></script>
-			<script src="/assets/js/skel.min.js"></script>
-			<script src="/assets/js/util.js"></script>
+@@ -94,4 +97,4 @@ <h1>{{ site.tagline }}</h1>
 			<script src="/assets/js/main.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/ilyabirman-likely/2.3.0/likely.js"></script>
-	</body>
+	</body> 
 </html>
