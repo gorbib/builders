@@ -9,14 +9,15 @@ markdown: kramdown
 kramdown:
   auto_ids: false # Disable automatic ids for headers (h1,h2,..)
   hard_wrap: true
-
+  
 plugins:
   - jekyll-sitemap
-
+  
 collections:
   persons:
     layout: person
     permalink: /:collection/:title
+    output: true 
     output: true
 collections:
   books:
