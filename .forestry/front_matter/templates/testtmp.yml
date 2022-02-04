@@ -25,3 +25,5 @@ fields:
     time_format: 
     display_utc: false
   label: Дата публикации
+pages:
+- _test/test2.md
