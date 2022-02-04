@@ -22,3 +22,8 @@ collections:
     layout: book
     permalink: /:collection/:title
     output: true
+  test:
+    layout: test
+    permalink: /:collection/:title
+    output: true
+    
