@@ -20,6 +20,13 @@ sections:
   match: "**/*"
   templates:
   - books
+- type: directory
+  path: _testside
+  label: Тест
+  create: all
+  match: "**/*"
+  templates:
+  - testtmp
 upload_dir: images/persons
 public_path: "/images/persons"
 front_matter_path: "/uploads"
