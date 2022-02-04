@@ -21,4 +21,4 @@ collections:
   books:
     layout: book
     permalink: /:collection/:title
-    output: true    
+    output: true
