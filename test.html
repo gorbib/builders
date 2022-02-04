@@ -1,0 +1,28 @@
+---
+layout: default
+title: это тайтл теста
+description: "Дискрипшин я вообще забыл что такое"
+---
+
+<article class="post featured">
+    <header class="major">
+        <h2>тест (корень)</h2>
+    </header>
+</article>
+
+<section class="posts">
+    {% assign persons = site.test | reverse %}
+
+    {% for test in test %}
+        <article>
+            <header>
+                <h2><a href="{{ test.url }}">{{ test.name }}</a></h2>
+            </header>
+            <a href="{{ test.url }}" class="image fit"><img src="{{ test.photo }}" alt="{{ test.name }}"></a>
+            <p>{{ person.description }}</p>
+            <ul class="actions">
+                <li><a href="{{ test.url }}" class="button">Читать</a></li>
+            </ul>
+        </article>
+    {% endfor %}
+</section>
