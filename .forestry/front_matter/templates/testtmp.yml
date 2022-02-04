@@ -25,5 +25,3 @@ fields:
     time_format: 
     display_utc: false
   label: Дата публикации
-pages:
-- _testside/testtxt.md
