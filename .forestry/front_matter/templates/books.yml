@@ -22,3 +22,5 @@ fields:
   config:
     required: false
   label: Дата записи
+pages:
+- _books/kniga2.md
