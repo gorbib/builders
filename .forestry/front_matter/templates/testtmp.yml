@@ -1,4 +1,27 @@
 ---
 label: testtmp
 hide_body: false
-fields: []
+fields:
+- name: zagolovok
+  type: text
+  config:
+    required: false
+  label: Заголовок
+- name: opisanie
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Описание
+- name: data_publikacii
+  type: datetime
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: Дата публикации
